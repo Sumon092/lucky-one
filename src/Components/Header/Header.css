@@ -1,0 +1,13 @@
+.header{
+    height: 100px;
+    background-color: #26628a;
+    align-items: center;
+    color: #ffff;
+}
+.header h1{
+    margin: 0;
+    font-size: 2.4rem;
+}
+.header p{
+    margin-top: 0;
+}

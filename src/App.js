@@ -1,23 +1,15 @@
-
-import { useEffect, useState } from 'react';
 import './App.css';
-import Flowers from './Flowers/Flowers';
+import Flowers from './Components/Flowers/Flowers';
+import Header from './Components/Header/Header';
+
 
 function App() {
-  const [flowers, setFlowers] = useState([]);
-  console.log(flowers);
 
-  useEffect(() => {
-    fetch('data.json')
-      .then(res => res.json())
-      .then(data => setFlowers(data));
-  }, []);
 
   return (
-    <div className='card-container'>
-      {
-        flowers.map((flower) => (<Flowers key={flower.id} data={flower}></Flowers>))
-      }
+    <div className='App'>
+      <Header></Header>
+      <Flowers></Flowers>
 
     </div>
   );

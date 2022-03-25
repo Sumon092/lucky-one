@@ -1,0 +1,12 @@
+
+.flower{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 20px;
+}
+.flowers-container{
+    border: 2px solid green;
+}
+.selected-flowers{
+    border: 2px solid blue;
+}
