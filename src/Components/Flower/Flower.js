@@ -1,4 +1,5 @@
 import React from 'react';
+import { BsFillCartFill } from "react-icons/bs";
 import './Flower.css'
 
 const Flower = props => {
@@ -13,7 +14,8 @@ const Flower = props => {
                 <h4>Price : $ {price}</h4>
             </div>
             <button className='buy-flower'>
-                <p>Buy This</p>
+                <p className='btn-text'>Buy This</p>
+                <BsFillCartFill className='icon'></BsFillCartFill>
             </button>
         </div>
     );
