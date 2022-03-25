@@ -12,9 +12,8 @@ const Flowers = () => {
             .then(data => setFlowers(data))
     }, [])
     return (
-        <div className='flower'>
+        <div className='flowers'>
             <div className='flowers-container'>
-                <h1>this is flower container</h1>
                 {
                     flowers.map((flower) => (<Flower key={flower.id} flowerData={flower}></Flower>))
                 }
