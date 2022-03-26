@@ -29,14 +29,21 @@ const Flowers = () => {
             .then(data => setFlowers(data))
     }, []);
 
+
+    const removeItems = () => {
+
+        setCart([]);
+    }
     const chooseRandom = () => {
         const choose = Math.floor(Math.random(cart.length) * cart.length);
         const chooseItem = cart[choose];
+        console.log(chooseItem);
         SetSelectOne(chooseItem);
+        alert(chooseItem.name)
     }
 
     const hadleCart = () => {
-        const newCart = [];
+        const newCart = []
         setCart = newCart;
     }
 
@@ -63,6 +70,11 @@ const Flowers = () => {
                 }
                 {
                     <button className='select-one-button' onClick={chooseRandom}>CHOOSE ONE</button>
+                }
+                {
+                    <button className='select-one-button' onClick={removeItems}>
+                        Remove Items
+                    </button>
                 }
 
 
