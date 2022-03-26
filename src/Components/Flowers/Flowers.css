@@ -6,7 +6,6 @@
     max-width: 1500px;
 }
 .flowers-container{
-    border: 2px solid green;
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
@@ -16,5 +15,5 @@
     border-radius: 10px;
 }
 .selected-flowers{
-    border: 2px solid blue;
+    box-shadow: 10px 10px 10px gray;
 }

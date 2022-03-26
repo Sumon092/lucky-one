@@ -1,11 +1,12 @@
 import React from 'react';
-import { BsFillCartFill } from "react-icons/bs";
+import { BsFillCartFill } from 'react-icons/bs';
 import './Flower.css'
 
-const Flower = props => {
-    console.log(props)
-    const { name, price, id, img } = props.flowerData;
-
+const Flower = (props) => {
+    // console.log(props)
+    const { handleAddToCart } = props.handleAddToCart;
+    const { name, price, img } = props.flowerData;
+    // console.log(props)
     return (
         <div className='flowers-card'>
             <img src={img} alt="" />
@@ -13,10 +14,12 @@ const Flower = props => {
                 <h2>{name}</h2>
                 <h4>Price : $ {price}</h4>
             </div>
-            <button className='buy-flower'>
-                <p className='btn-text'>Buy This</p>
+
+            <button onClick={() => props.handleAddToCart(props.flowerData)} className='buy-flower'>
+                <p className='btn-text'>Add To Cart</p>
                 <BsFillCartFill className='icon'></BsFillCartFill>
             </button>
+
         </div>
     );
 };
