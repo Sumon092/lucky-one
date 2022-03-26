@@ -1,24 +1,44 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import Flower from '../Flower/Flower';
+import RandomSelect from '../RandomSelect/RandomSelect';
 import './Flowers.css'
 
 const Flowers = () => {
     const [flowers, setFlowers] = useState([]);
     const [cart, setCart] = useState([]);
+    const [selectOne, SetSelectOne] = useState([]);
+    const [isDuplicate, setIsDuplicate] = useState(false);
     console.log(cart)
 
     const handleAddToCart = flower => {
-        const newCart = [...cart, flower]
-        console.log(newCart);
-        setCart(newCart);
+        const duplicate = cart.find((c) => c.id === flower.id)
+        if (duplicate) {
+            setIsDuplicate(true);
+        }
+        else {
+            const newCart = [...cart, flower]
+            setCart(newCart);
+        }
     }
+
 
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
             .then(data => setFlowers(data))
     }, []);
+
+    const chooseRandom = () => {
+        const choose = Math.floor(Math.random(cart.length) * cart.length);
+        const chooseItem = cart[choose];
+        SetSelectOne(chooseItem);
+    }
+
+    const hadleCart = () => {
+        const newCart = [];
+        setCart = newCart;
+    }
 
     return (
         <div className='flowers'>
@@ -33,9 +53,16 @@ const Flowers = () => {
                 }
             </div>
             <div className='selected-flowers'>
-                <h2>Selected Flowers</h2>
+                <h1>Selected Flowers</h1>
                 {
                     cart.map((item) => <Cart cart={item} key={item.id}></Cart>)
+                }
+
+                {
+                    <div><RandomSelect choose={selectOne}></RandomSelect></div>
+                }
+                {
+                    <button className='select-one-button' onClick={chooseRandom}>CHOOSE ONE</button>
                 }
 
 

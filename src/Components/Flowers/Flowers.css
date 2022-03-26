@@ -6,7 +6,7 @@
     max-width: 1500px;
 }
 .flowers-container{
-    display: grid;
+    display: grid; 
     grid-template-columns: repeat(3,1fr);
 }
 .flowers img{
@@ -16,4 +16,14 @@
 }
 .selected-flowers{
     box-shadow: 10px 10px 10px gray;
+}
+.select-one-button{
+    border-radius: 15px;
+    background-color: rgb(59, 122, 124);
+    color: #ffff;
+    padding: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-weight: bold;
+    margin: 20px;
 }

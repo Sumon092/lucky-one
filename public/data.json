@@ -1,56 +1,56 @@
 [
   {
     "id": 1,
-    "name": "Indian Rose",
+    "name": "White Sun Flower",
     "img": "./images/image (1).jpg",
-    "price": "6"
+    "price": "1.99"
   },
   {
     "id": 2,
-    "name": "Indian Rose",
+    "name": "White Rose",
     "img": "./images/image (2).jpg",
-    "price": "6"
+    "price": "3.00"
   },
   {
     "id": 3,
-    "name": "Indian Rose",
+    "name": "Mixed Flower",
     "img": "./images/image (3).jpg",
-    "price": "6"
+    "price": "5.00"
   },
   {
     "id": 4,
     "name": "Indian Rose",
     "img": "./images/image (4).jpg",
-    "price": "6"
+    "price": "3.00"
   },
   {
     "id": 5,
-    "name": "Indian Rose",
+    "name": "Pink Rose",
     "img": "./images/image (5).jpg",
     "price": "6"
   },
   {
     "id": 6,
-    "name": "Indian Rose",
+    "name": "Pink Tulip",
     "img": "./images/image (6).jpg",
-    "price": "6"
+    "price": "2.55"
   },
   {
     "id": 7,
-    "name": "Indian Rose",
+    "name": "Japani Flower",
     "img": "./images/image (7).jpg",
-    "price": "6"
+    "price": "1.50"
   },
   {
     "id": 8,
-    "name": "Indian Rose",
+    "name": "Queen Rose",
     "img": "./images/image (8).jpg",
-    "price": "6"
+    "price": "1.90"
   },
   {
     "id": 9,
-    "name": "Indian Rose",
+    "name": "Sun Flower",
     "img": "./images/image (9).jpg",
-    "price": "6"
+    "price": "2.00"
   }
 ]
