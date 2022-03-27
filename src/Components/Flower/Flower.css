@@ -41,3 +41,19 @@
 
     margin-right: 7px;
 }
+
+
+/* Make responsive */
+@media (max-width: 688px) {
+    .flowers{
+        max-width: 688px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .flowers img{
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+    }
+}

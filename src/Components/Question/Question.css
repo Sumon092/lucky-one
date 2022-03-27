@@ -1,4 +1,9 @@
 .question{
-    margin-right: 20px;
-    padding: 20px;
+    margin-right: 50px;
+    padding: 50px;
+    font-size: 1.3rem;
+}
+.question div{
+    box-shadow: 10px 10px 30px #000000;
+    padding: 30px;
 }

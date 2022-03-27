@@ -27,3 +27,42 @@
     font-weight: bold;
     margin: 20px;
 }
+
+/* Make responsive */
+@media (max-width: 688px) {
+    .flowers{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column: auto;
+        margin: 20px;
+        max-width: 668px;
+    }
+
+    .flowers-container{
+        max-width: 688px;
+        display: grid;
+        grid-template-columns: 1fr;
+        order: 2;
+    }
+    .selected-flowers{
+        box-shadow: 10px 10px 10px gray;
+        order: 1;
+    }
+
+    .flowers img{
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    .select-one-button{
+        border-radius: 15px;
+        background-color: rgb(59, 122, 124);
+        color: #ffff;
+        padding: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        font-weight: bold;
+        margin: 10px;
+    }
+}

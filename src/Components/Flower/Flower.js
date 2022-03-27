@@ -1,7 +1,7 @@
 import React from 'react';
+import './Flower.css';
 import { BsFillCartFill } from 'react-icons/bs';
-import Question from '../Question/Question';
-import './Flower.css'
+
 
 const Flower = (props) => {
     // console.log(props)
