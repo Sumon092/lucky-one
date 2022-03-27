@@ -60,22 +60,24 @@ const Flowers = () => {
                 }
             </div>
             <div className='selected-flowers'>
-                <h1>Selected Flowers</h1>
-                {
-                    cart.map((item) => <Cart cart={item} key={item.id}></Cart>)
-                }
+                <div>
+                    <h1>Selected Flowers</h1>
+                    {
+                        cart.map((item) => <Cart cart={item} key={item.id}></Cart>)
+                    }
 
-                {
-                    <div><RandomSelect choose={selectOne}></RandomSelect></div>
-                }
-                {
-                    <button className='select-one-button' onClick={chooseRandom}>CHOOSE ONE</button>
-                }
-                {
-                    <button className='select-one-button' onClick={removeItems}>
-                        CHOOSE AGAIN
-                    </button>
-                }
+                    {
+                        <div><RandomSelect choose={selectOne}></RandomSelect></div>
+                    }
+                    {
+                        <button className='select-one-button' onClick={chooseRandom}>CHOOSE ONE</button>
+                    }
+                    {
+                        <button className='select-one-button' onClick={removeItems}>
+                            CHOOSE AGAIN
+                        </button>
+                    }
+                </div>
 
 
             </div>

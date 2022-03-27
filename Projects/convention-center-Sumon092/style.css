@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.group-background{
+    background-color: rgba(30, 64, 128, 0.603);
+}
+.banner-view{
+    width: calc(100vh - 80px);
+}
+.chose-plan-link{
+    background-color: rgba(219, 219, 217, 0.527);
+}
+
+

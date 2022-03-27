@@ -14,6 +14,12 @@
     box-shadow: 5px 5px 5px gray;
     position: relative;
 }
+.image-info h2{
+    margin-bottom: 10px;
+}
+.image-info h4{
+    margin-top: 5px;
+}
 .image-container{
     max-width: 300px;
 }
@@ -43,17 +49,3 @@
 }
 
 
-/* Make responsive */
-@media (max-width: 688px) {
-    .flowers{
-        max-width: 688px;
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .flowers img{
-        width: 200px;
-        height: 200px;
-        border-radius: 10px;
-    }
-}

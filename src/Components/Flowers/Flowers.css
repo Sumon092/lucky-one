@@ -14,18 +14,25 @@
     height: 350px;
     border-radius: 10px;
 }
-.selected-flowers{
-    box-shadow: 10px 10px 10px gray;
+.selected-flowers div{
+    position: sticky;
+    top: 0;
+}
+.selected-flowers div h1{
+    background-color: rgb(59, 122, 124);
+    padding: 15px;
+    color: #ffff;
 }
 .select-one-button{
     border-radius: 15px;
     background-color: rgb(59, 122, 124);
     color: #ffff;
     padding: 15px;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
     font-weight: bold;
     margin: 20px;
+    margin-bottom: 0;
 }
 
 /* Make responsive */
@@ -50,9 +57,13 @@
     }
 
     .flowers img{
-        width: 200px;
-        height: 200px;
+        width: 330px;
+        height: 350px;
         border-radius: 10px;
+    }
+    .selected-flowers div{
+        position: sticky;
+        top: 0;
     }
 
     .select-one-button{
@@ -60,8 +71,8 @@
         background-color: rgb(59, 122, 124);
         color: #ffff;
         padding: 10px;
-        padding-right: 10px;
-        padding-left: 10px;
+        padding-right: 5px;
+        padding-left: 5px;
         font-weight: bold;
         margin: 10px;
     }
