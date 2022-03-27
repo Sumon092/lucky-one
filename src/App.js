@@ -2,6 +2,7 @@ import './App.css';
 import Cart from './Components/Cart/Cart';
 import Flowers from './Components/Flowers/Flowers';
 import Header from './Components/Header/Header';
+import Question from './Components/Question/Question';
 
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
     <div className='App'>
       <Header></Header>
       <Flowers></Flowers>
-      {/* <Cart></Cart> */}
+      <Question></Question>
 
     </div>
   );

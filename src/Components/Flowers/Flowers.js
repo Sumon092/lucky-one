@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import Flower from '../Flower/Flower';
+import Question from '../Question/Question';
 import RandomSelect from '../RandomSelect/RandomSelect';
 import './Flowers.css'
 
@@ -73,7 +74,7 @@ const Flowers = () => {
                 }
                 {
                     <button className='select-one-button' onClick={removeItems}>
-                        Remove Items
+                        CHOOSE AGAIN
                     </button>
                 }
 

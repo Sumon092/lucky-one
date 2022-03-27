@@ -1,5 +1,6 @@
 import React from 'react';
 import { BsFillCartFill } from 'react-icons/bs';
+import Question from '../Question/Question';
 import './Flower.css'
 
 const Flower = (props) => {
@@ -21,6 +22,7 @@ const Flower = (props) => {
             </button>
 
         </div>
+
     );
 };
 
