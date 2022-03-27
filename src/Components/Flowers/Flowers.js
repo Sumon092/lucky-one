@@ -9,7 +9,7 @@ const Flowers = () => {
     const [cart, setCart] = useState([]);
     const [selectOne, SetSelectOne] = useState([]);
     const [isDuplicate, setIsDuplicate] = useState(false);
-    console.log(cart)
+
 
     const handleAddToCart = flower => {
         const duplicate = cart.find((c) => c.id === flower.id)
@@ -39,12 +39,7 @@ const Flowers = () => {
         const chooseItem = cart[choose];
         console.log(chooseItem);
         SetSelectOne(chooseItem);
-        alert(chooseItem.name)
-    }
-
-    const hadleCart = () => {
-        const newCart = []
-        setCart = newCart;
+        alert("You can buy " + chooseItem.name + " for $" + chooseItem.price);
     }
 
     return (

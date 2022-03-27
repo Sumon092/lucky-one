@@ -1,6 +1,6 @@
 
 
-This project was bootstrapped with [F Heaven](https://bejewelled-croquembouche-2e376d.netlify.app/).
+This project was bootstrapped with [Flowers Heaven](https://bejewelled-croquembouche-2e376d.netlify.app/).
 
 ## Available Scripts
 
